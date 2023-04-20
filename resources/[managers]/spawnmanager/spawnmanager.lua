@@ -1,3 +1,4 @@
+--edit by m7m3x
 -- in-memory spawnpoint array for this script execution instance
 local spawnPoints = {}
 
@@ -251,7 +252,7 @@ function spawnPlayer(spawnIdx, cb)
         end
 
         -- freeze the local player
-        freezePlayer(PlayerId(), true)
+        freezePlayer(PlayerId(), true)--make sure to change this if you using extrnal register script
 
         -- if the spawn has a model set
         if spawn.model then
